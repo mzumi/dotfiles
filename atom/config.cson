@@ -1,0 +1,20 @@
+"*":
+  "exception-reporting":
+    userId: "47a52cc4-e7ee-c894-e766-8902aa85c8d7"
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "atom-dark-ui"
+      "railscasts-theme"
+    ]
+    disabledPackages: [
+      "symbols-view"
+    ]
+  editor:
+    invisibles: {}
+    fontSize: 11
+  racer:
+    rustSrcPath: "/usr/local/src/rust/rustc-1.2.0/src"
+  "atom-ctags":
+    autoBuildTagsWhenActive: true

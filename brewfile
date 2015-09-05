@@ -1,0 +1,46 @@
+tap 'caskroom/cask'
+
+brew 'zsh'
+brew 'tmux'
+brew 'reattach-to-user-namespace'
+brew 'tig'
+brew 'ctags'
+brew 'ghq'
+brew 'peco'
+brew 'direnv'
+brew 'jq'
+brew 'wget'
+
+brew 'nmap'
+
+brew 'packer'
+brew 'terraform'
+brew 'docker'
+brew 'boot2docker'
+
+
+brew 'multirust'
+
+brew 'rbenv'
+brew 'ruby-build'
+
+brew 'carthage'
+
+cask 'atom'
+cask 'coteditor'
+cask 'dropbox'
+cask 'iterm2'
+cask 'postico'
+cask 'tower'
+cask 'transmit'
+cask 'trailer'
+cask 'arq'
+cask 'hyperswitch'
+cask 'google-chrome'
+cask 'virtualbox'
+cask 'clipmenu'
+cask 'istat-menus'
+cask 'kindle'
+cask 'nvalt'
+cask 'vlc'
+cask 'paw'

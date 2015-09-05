@@ -1,0 +1,5 @@
+atom/.apm/
+atom/compile-cache/
+atom/packages/
+atom/projects.cson
+atom/storage/
