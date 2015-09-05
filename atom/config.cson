@@ -1,20 +1,46 @@
 "*":
   "exception-reporting":
-    userId: "47a52cc4-e7ee-c894-e766-8902aa85c8d7"
+    userId: "436a16fe-530e-20b8-f61f-ee55304e5be2"
   welcome:
     showOnStartup: false
+  metrics:
+    userId: "f618b2b01d72c899a9aca673c09fb16d2dadb58f"
+  editor:
+    fontFamily: "menlo"
+    useShadowDOM: true
+    invisibles: {}
+    showInvisibles: true
+    fontSize: 10
   core:
     themes: [
       "atom-dark-ui"
-      "railscasts-theme"
+      "railscast-theme"
     ]
     disabledPackages: [
       "symbols-view"
+      "symbols-tree-view"
     ]
-  editor:
-    invisibles: {}
-    fontSize: 11
-  racer:
-    rustSrcPath: "/usr/local/src/rust/rustc-1.2.0/src"
   "atom-ctags":
     autoBuildTagsWhenActive: true
+    cmdArgs: "--exclude=solr --exclude=bin --exclude=config --exclude=db --exclude=spec"
+    buildTimeout: 1000000
+  "markdown-preview":
+    breakOnSingleNewline: true
+  "autocomplete-plus": {}
+  linter:
+    statusBar: "Show all errors"
+    ignoredLinterErrors: [
+      "haml-lint"
+    ]
+  "linter-shellcheck":
+    shellcheckExecutablePath: "/bin/bash"
+  rspec:
+    command: "bundle exec rspec"
+    save_before_run: true
+  term2:
+    openPanesInSameSplit: true
+  "linter-haml-lint":
+    hamlLintExecutablePath: "/usr/bin/haml-lint"
+  "atom-beautify":
+    _analyticsUserId: "2f0f1bbb-e9f1-45e7-a151-9f0cff5e0426"
+  "linter-rust": {}
