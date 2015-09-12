@@ -44,3 +44,5 @@
   "atom-beautify":
     _analyticsUserId: "2f0f1bbb-e9f1-45e7-a151-9f0cff5e0426"
   "linter-rust": {}
+  racer:
+    rustSrcPath: "/usr/local/src/rust/rustc-1.2.0/src"
