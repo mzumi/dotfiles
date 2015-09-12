@@ -45,4 +45,5 @@ cask 'nvalt'
 cask 'vlc'
 cask 'paw'
 cask 'todoist'
+cask 'dash'
 
