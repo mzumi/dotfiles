@@ -1,49 +1,43 @@
 tap 'caskroom/cask'
 
-brew 'zsh'
-brew 'tmux'
-brew 'reattach-to-user-namespace'
-brew 'tig'
-brew 'ctags'
-brew 'ghq'
-brew 'peco'
-brew 'direnv'
-brew 'jq'
-brew 'wget'
-
-brew 'nmap'
-
-brew 'packer'
-brew 'terraform'
-brew 'docker'
-brew 'boot2docker'
-
-
-brew 'multirust'
-
-brew 'rbenv'
-brew 'ruby-build'
-
 brew 'carthage'
+brew 'direnv'
+brew 'ghq'
+brew 'gnupg'
+brew 'jq'
+brew 'mas'
+brew 'nmap'
+brew 'packer'
+brew 'peco'
+brew 'rbenv'
+brew 'reattach-to-user-namespace'
+brew 'ruby-build'
+brew 'terraform'
+brew 'tig'
+brew 'tmux'
+brew 'wget'
+brew 'zplug'
+brew 'zsh'
 
-cask 'atom'
-cask 'coteditor'
-cask 'dropbox'
-cask 'iterm2'
-cask 'postico'
-cask 'tower'
-cask 'transmit'
-cask 'trailer'
 cask 'arq'
-cask 'hyperswitch'
+cask 'clipy'
+cask 'docker'
+cask 'dropbox'
+cask 'fork'
 cask 'google-chrome'
-cask 'virtualbox'
-cask 'clipmenu'
+cask 'hyperswitch'
 cask 'istat-menus'
-cask 'kindle'
-cask 'nvalt'
-cask 'vlc'
+cask 'iterm2'
+cask 'launchbar'
 cask 'paw'
-cask 'todoist'
-cask 'dash'
+cask 'transmit'
+cask 'visual-studio-code'
+cask 'vlc'
 
+mas '1Password', id:443987910
+mas 'CotEditor', id: 1024640650
+mas 'Magnet', id: 441258766
+mas 'Marked 2', id: 890031187
+mas 'Proxy', id: 874920950
+mas 'Quiver', id: 866773894
+mas 'Things 3', id: 904280696
