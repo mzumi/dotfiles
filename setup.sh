@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export DOT_FILE_DIR=/Users/mzumi/.ghq/github.com/mzumi/dotfiles
+export DOT_FILE_DIR=`echo $(cd $(dirname $0) && pwd)`
 
 ln -sf $DOT_FILE_DIR/Brewfile ~/.Brewfile
 ln -sf $DOT_FILE_DIR/tmux.conf ~/.tmux.conf
