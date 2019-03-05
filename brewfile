@@ -1,42 +1,71 @@
-tap 'caskroom/cask'
+tap 'homebrew/bundle'
+tap 'homebrew/cask'
 
+brew 'openssl'
+brew 'awscli'
+brew 'bat'
 brew 'carthage'
+brew 'dep'
 brew 'direnv'
+brew 'exa'
+brew 'fd'
 brew 'ghq'
+brew 'gnu-getopt'
 brew 'gnupg'
+brew 'goenv'
+brew 'hugo'
+brew 'imagemagick'
 brew 'jq'
+brew 'kubernetes-cli'
+brew 'kubectx'
+brew 'kubernetes-helm'
 brew 'mas'
+brew 'mackup'
 brew 'nmap'
 brew 'packer'
 brew 'peco'
-brew 'rbenv'
+brew 'pyenv'
 brew 'ruby-build'
+brwe 'rustup-init'
+brew 'rbenv'
 brew 'terraform'
+brew 'tfenv'
 brew 'tig'
 brew 'wget'
 brew 'zplug'
 brew 'zsh'
 
+cask 'appcleaner'
 cask 'arq'
+cask 'bitbar'
 cask 'clipy'
 cask 'docker'
 cask 'dropbox'
-cask 'fork'
-cask 'google-chrome'
+cask 'firefox'
+cask 'graphiql'
 cask 'hyperswitch'
 cask 'istat-menus'
 cask 'iterm2'
 cask 'launchbar'
 cask 'paw'
+cask 'sequel-pro'
+cask 'tower'
 cask 'transmit'
 cask 'visual-studio-code'
-cask 'vlc'
 
-mas '1Password', id:443987910
+mas '1Password', id: 443987910
+mas 'Be Focused Pro', id: 961632517
 mas 'CotEditor', id: 1024640650
+mas 'Keynote', id: 409183694
 mas 'Magnet', id: 441258766
-mas 'Marked 2', id: 890031187
+mas 'Pixelmator', id: 407963104
+mas 'PopClip', id: 445189367
 mas 'Proxy', id: 874920950
-mas 'Quiver', id: 866773894
-mas 'Scapple', id: 568020055 
-mas 'Things 3', id: 904280696
+mas 'Scapple', id: 568020055
+mas 'Slack', id: 803453959
+mas 'SnapNDrag Pro', id: 430397512
+mas 'SoraAnnai', id: 599799247
+mas 'Things3', id: 904280696
+mas 'WinArchiver Lite', id: 414855915
+mas 'Xcode', id: 497799835
+
