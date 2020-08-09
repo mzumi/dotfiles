@@ -1,1 +1,1 @@
-docker-compose
+apt-get install docker-compose
