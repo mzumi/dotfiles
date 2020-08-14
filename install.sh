@@ -1,5 +1,5 @@
 #if [ -e docker-compose.yml ]; then
-#    sudo apt-get -y install docker-compose
+sudo apt-get -y install docker-compose
 #fi
 
 # Settings for golang
