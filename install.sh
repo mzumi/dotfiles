@@ -8,6 +8,7 @@ echo 'export PATH="$GOENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(goenv init -)"' >> ~/.bashrc
 
 if [ -e .go-version ]; then
+    source ~/.bashrc
     goenv install
 fi
 
