@@ -7,6 +7,10 @@ echo 'export GOENV_ROOT="$HOME/.goenv"' >> ~/.bashrc
 echo 'export PATH="$GOENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(goenv init -)"' >> ~/.bashrc
 
+if [ -e .go-version ]; then
+    goenv install
+fi
+
 # Settings for rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
