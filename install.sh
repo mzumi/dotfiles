@@ -1,1 +1,1 @@
-sudo apt-get install docker-compose
+sudo apt-get -y install docker-compose
