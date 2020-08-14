@@ -4,7 +4,7 @@ sudo apt-get -y install docker-compose
 
 # Settings for golang
 if [ -e .go-version ]; then
-    git clone https://github.com/syndbg/goenv.git ~/.goenv
+    #git clone https://github.com/syndbg/goenv.git ~/.goenv
 
     echo 'export GOENV_ROOT="$HOME/.goenv"' >> ~/.bashrc
     echo 'export PATH="$GOENV_ROOT/bin:$PATH"' >> ~/.bashrc
