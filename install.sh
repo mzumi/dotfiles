@@ -13,10 +13,10 @@ if [ -e .go-version ]; then
     #$GOENV_ROOT/bin/goenv install
 fi
 
-# Settings for rust
-if [ -e Cargo.toml ]; then
-    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-
-    echo 'export CARGO_HOME="$HOME/.cargo"' >> ~/.bashrc
-    echo 'export PATH="$CARGO_HOME/bin:$PATH"'>> ~/.bashrc
-fi
+# Settings for rust]
+#if [ -e Cargo.toml ]; then
+#    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+#
+#    echo 'export CARGO_HOME="$HOME/.cargo"' >> ~/.bashrc
+#    echo 'export PATH="$CARGO_HOME/bin:$PATH"'>> ~/.bashrc
+#fi
