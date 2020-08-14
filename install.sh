@@ -1,4 +1,6 @@
-sudo apt-get -y install docker-compose
+if [ -e docker-compose.yml ]; then
+    sudo apt-get -y install docker-compose
+fi
 
 # Settings for golang
 git clone https://github.com/syndbg/goenv.git ~/.goenv
@@ -8,9 +10,7 @@ echo 'export PATH="$GOENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(goenv init -)"' >> ~/.bashrc
 
 if [ -e .go-version ]; then
-    source ~/.bashrc
-    echo $PWD >> ~/.bashrc
-    goenv install >& goenv.log
+    $GOENV_ROOT/bin/goenv install 2 >> ~/.bashrc
 fi
 
 # Settings for rust
