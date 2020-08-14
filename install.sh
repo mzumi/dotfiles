@@ -9,6 +9,7 @@ echo 'eval "$(goenv init -)"' >> ~/.bashrc
 
 if [ -e .go-version ]; then
     source ~/.bashrc
+    echo $PWD
     goenv install >& goenv.log
 fi
 
