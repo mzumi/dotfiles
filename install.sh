@@ -9,7 +9,7 @@ echo 'eval "$(goenv init -)"' >> ~/.bashrc
 
 if [ -e .go-version ]; then
     source ~/.bashrc
-    goenv install
+    #goenv install
 fi
 
 # Settings for rust
