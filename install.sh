@@ -8,7 +8,7 @@ echo 'export PATH="$GOENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(goenv init -)"' >> ~/.bashrc
 
 # Settings for rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 echo 'export CARGO_HOME="$HOME/.cargo"' >> ~/.bashrc
 echo 'export PATH="$CARGO_HOME/bin:$PATH"'>> ~/.bashrc
