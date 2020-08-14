@@ -3,18 +3,20 @@ if [ -e docker-compose.yml ]; then
 fi
 
 # Settings for golang
-git clone https://github.com/syndbg/goenv.git ~/.goenv
-
-echo 'export GOENV_ROOT="$HOME/.goenv"' >> ~/.bashrc
-echo 'export PATH="$GOENV_ROOT/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(goenv init -)"' >> ~/.bashrc
-
 if [ -e .go-version ]; then
-    $GOENV_ROOT/bin/goenv install 2 >> ~/.bashrc
+    git clone https://github.com/syndbg/goenv.git ~/.goenv
+
+    echo 'export GOENV_ROOT="$HOME/.goenv"' >> ~/.bashrc
+    echo 'export PATH="$GOENV_ROOT/bin:$PATH"' >> ~/.bashrc
+    echo 'eval "$(goenv init -)"' >> ~/.bashrc
+
+    #$GOENV_ROOT/bin/goenv install
 fi
 
 # Settings for rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+if [ -e Cargo.toml ]; then
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
-echo 'export CARGO_HOME="$HOME/.cargo"' >> ~/.bashrc
-echo 'export PATH="$CARGO_HOME/bin:$PATH"'>> ~/.bashrc
+    echo 'export CARGO_HOME="$HOME/.cargo"' >> ~/.bashrc
+    echo 'export PATH="$CARGO_HOME/bin:$PATH"'>> ~/.bashrc
+fi
