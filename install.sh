@@ -10,9 +10,7 @@ if [ -e ~/workspace/*/.go-version ]; then
     echo 'export PATH="$GOENV_ROOT/bin:$PATH"' >> ~/.bashrc
     echo 'eval "$(goenv init -)"' >> ~/.bashrc
 
-    #$GOENV_ROOT/bin/goenv install
-else
-    echo $PWD >> ~/.bashrc
+    $GOENV_ROOT/bin/goenv install
 fi
 
 # Settings for rust]
