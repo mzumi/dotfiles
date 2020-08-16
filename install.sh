@@ -12,7 +12,7 @@ if [ -e .go-version ]; then
     echo 'export PATH="$GOENV_ROOT/bin:$PATH"' >> ~/.bashrc
     echo 'eval "$(goenv init -)"' >> ~/.bashrc
 
-    $GOENV_ROOT/bin/goenv install
+    #$GOENV_ROOT/bin/goenv install
 fi
 
 # Settings for rust]
