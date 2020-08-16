@@ -1,9 +1,11 @@
-if [ -e ~/workspace/*/docker-compose.yml ]; then
+cd ~/workspace/*/
+
+if [ -e docker-compose.yml ]; then
     sudo apt-get -y install docker-compose
 fi
 
 # Settings for golang
-if [ -e ~/workspace/*/.go-version ]; then
+if [ -e .go-version ]; then
     git clone https://github.com/syndbg/goenv.git ~/.goenv
 
     echo 'export GOENV_ROOT="$HOME/.goenv"' >> ~/.bashrc
@@ -14,7 +16,7 @@ if [ -e ~/workspace/*/.go-version ]; then
 fi
 
 # Settings for rust]
-if [ -e ~/workspace/*/Cargo.toml ]; then
+if [ -e Cargo.toml ]; then
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
     echo 'export CARGO_HOME="$HOME/.cargo"' >> ~/.bashrc
